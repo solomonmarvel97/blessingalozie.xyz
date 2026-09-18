@@ -33,10 +33,9 @@ export const aboutStory: {
       id: 'shipped',
       title: 'What I have shipped',
       body: [
-        'At JobBox I designed and built Vue.js interfaces for an AI-native recruitment workspace. At veenna I did the same for a voice-first productivity product: capture, tasks, and follow-through in one UI.',
-        'At KidsClubZone I build educational web applications: reusable Vue.js components, dynamic learning pages, and interactive experiences for students. At IvoryLearn I do the same for LMS interfaces, including API-backed pages, navigation, accessibility, and SEO.',
-        'At PeerPay Network I design marketing landing pages and product UI for digital lending and credit—public site pages, dashboards, and customer flows—with user flows, wireframes, prototypes, and high-fidelity interfaces in Figma.',
-        'I have also designed and built booking experiences for Luvie, the CRRNetwork landing page, and websites and course pages for The Mom\'s Hub. I started as a frontend intern at The Boltcliq Company in 2024.',
+        'At JobBox AI I build responsive frontend experiences for an AI-native recruitment platform: landing pages, product UI, and recruiter and candidate workflows in Vue.js and Tailwind CSS. At KidsClubZone I develop educational web applications. At PeerPay Network I design digital credit products in Figma.',
+        'I was frontend developer at IvoryLearn (Mar 2025 – Jan 2026) and frontend intern at Boltcliq in 2024.',
+        'Featured projects on this site and my resume include BeautiGo, Luvie, and CRRNetwork, plus additional product work such as veenna.',
       ],
     },
     {
@@ -59,7 +58,7 @@ export const aboutStory: {
       id: 'now',
       title: 'What I am building now',
       body: [
-        'Product design and frontend engineering for teams that need both. Live work is at KidsClubZone, PeerPay Network, and IvoryLearn.',
+        'Product design and frontend engineering for teams that need both. Live work is at JobBox AI, KidsClubZone, and PeerPay Network.',
         'I am available for product design and Vue.js work when the product is a fit.',
       ],
     },

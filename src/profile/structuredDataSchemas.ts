@@ -38,6 +38,11 @@ export function personSchema() {
     hasOccupation: [
       {
         '@type': 'Occupation',
+        name: 'Frontend Engineer',
+        occupationLocation: { '@type': 'Organization', name: 'JobBox AI', url: 'https://getjobbox.com' },
+      },
+      {
+        '@type': 'Occupation',
         name: 'Frontend Developer',
         occupationLocation: { '@type': 'Organization', name: 'KidsClubZone', url: 'https://kidsclubzone.com' },
       },
@@ -46,21 +51,17 @@ export function personSchema() {
         name: 'UI/UX Product Designer',
         occupationLocation: { '@type': 'Organization', name: 'PeerPay Network', url: 'https://peerpaynetwork.com' },
       },
-      {
-        '@type': 'Occupation',
-        name: 'Frontend Developer',
-        occupationLocation: { '@type': 'Organization', name: 'IvoryLearn', url: 'https://ivorylearn.com' },
-      },
     ],
     alumniOf: {
       '@type': 'EducationalOrganization',
       name: 'Ahmadu Bello University',
-      description: 'B.Sc. Sociology (2022 – 2025)',
+      description: 'B.Sc. Sociology (Mar 2022 – Jul 2025)',
     },
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       name: 'Certified Web Developer',
       credentialCategory: 'certificate',
+      description: 'Jul 2023 – Jan 2024',
       recognizedBy: { '@type': 'Organization', name: 'LearnCode Academy' },
     },
   }

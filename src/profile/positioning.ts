@@ -4,9 +4,9 @@ import { identity } from './identity'
 export const positioning = {
   title: 'Product Designer & Frontend Engineer',
   headline:
-    'I design and build user-centered digital products from concept to implementation, combining UX design, product thinking, and Vue.js development.',
+    'I design and build user-centered digital products from concept to implementation, combining UX design, product thinking, and frontend engineering.',
   subhead:
-    'Currently shipping at KidsClubZone, PeerPay Network, and IvoryLearn. Previously The Mom\'s Hub and The Boltcliq Company.',
+    'Currently at JobBox AI, KidsClubZone, and PeerPay Network. Previously IvoryLearn and Boltcliq.',
   contrarian:
     'Most products do not fail because of missing features. They fail because the interface is hard to trust, hard to use, or never gets built.',
   availabilityTitle: 'Open for product design and frontend work',
@@ -23,7 +23,7 @@ export const positioning = {
   salesOutcome:
     'The outcome I sell is a product experience in production: designed in Figma, built in Vue.js, responsive, accessible, and fast enough to keep. That is how I work on learning platforms, credit products, and booking flows.',
   salesAuthority:
-    'I am a product designer and frontend engineer. I designed and built product UI for JobBox and veenna, design landing pages and credit product UI at PeerPay Network, and ship educational interfaces at KidsClubZone and IvoryLearn. I have also shipped booking and landing work for Luvie and CRRNetwork.',
+    'I am a product designer and frontend engineer. I am frontend engineer at JobBox AI, frontend developer at KidsClubZone, UI/UX product designer at PeerPay Network, and I have shipped featured project work including BeautiGo, Luvie, and CRRNetwork.',
   salesCta: 'If you need the interface designed and shipped, start a project.',
   ctaKicker: 'Ready when the work is real',
   ctaHeadline: 'Design it. Build it. Ship it.',
@@ -45,9 +45,9 @@ export const seo = {
     'About Blessing Alozie, product designer bio, frontend engineer Nigeria, Vue.js designer, Figma to code',
   experienceTitle: 'Experience | Blessing Alozie – Product Design & Frontend',
   experienceDescription:
-    'Work history and shipped product UI: KidsClubZone, PeerPay Network, IvoryLearn, JobBox, veenna, Luvie, CRRNetwork, The Mom\'s Hub, and The Boltcliq Company.',
+    'Professional experience at JobBox AI, KidsClubZone, PeerPay Network, IvoryLearn, and Boltcliq—plus featured product work on this site.',
   experienceKeywords:
-    'Blessing Alozie experience, product design portfolio, Vue.js work history, KidsClubZone, PeerPay Network, IvoryLearn',
+    'Blessing Alozie experience, product design portfolio, Vue.js work history, JobBox AI, KidsClubZone, PeerPay Network',
 } as const
 
 export const faqs = [
@@ -59,7 +59,7 @@ export const faqs = [
   {
     question: 'What kind of products do you work on?',
     answer:
-      'Learning platforms, fintech dashboards, recruitment workspaces, voice products, and marketing sites that have to convert. Recent work includes JobBox, veenna, KidsClubZone, IvoryLearn, PeerPay Network, Luvie, and CRRNetwork.',
+      'Learning platforms, fintech credit products, recruitment workspaces, and marketing sites that have to convert. Recent work includes JobBox AI, KidsClubZone, PeerPay Network, BeautiGo, Luvie, and CRRNetwork.',
   },
   {
     question: 'Can you work from an existing Figma file or codebase?',

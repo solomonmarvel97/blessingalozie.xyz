@@ -71,143 +71,98 @@ export type Product = {
   /** Internal site path. When set, product opens this page instead of the modal. */
   page?: string
   isNew?: boolean
+  /** When set, consecutive cards share one header (label + period) in the projects grid. */
+  productGroup?: {
+    id: string
+    label: string
+    period: string
+  }
+  /** Shown instead of `year` on the card — use for surfaces under the same employer/product. */
+  surfaceLabel?: string
 }
 
 export const products: Product[] = [
   {
-    title: 'KidsClubZone',
-    year: '2024',
-    url: 'https://kidsclubzone.com',
-    urlLabel: 'Visit KidsClubZone',
-    image: '/profile/portfolio/kidsclubzone.jpg',
-    video: '/profile/portfolio/kidsclubzone.mp4',
-    imageAlt: 'KidsClubZone homepage with the headline Ignite Curiosity & Creativity, featuring a student learning on a laptop.',
-    imageHost: 'kidsclubzone.com',
-    pitch: 'Educational web application for kids 6–17: STEM, coding, design, and creative arts.',
-    detail: [
-      'KidsClubZone is a learning platform that combines instructors with AI-powered paths for kids ages 6–17. I built responsive educational web applications in Vue.js and Tailwind CSS: reusable UI components, dynamic learning pages, and interactive experiences that keep students engaged.',
-      'The work had to hold up on mobile, stay clear for parents and kids, and still feel like a product a child would want to open again.',
-    ],
-  },
-  {
-    title: 'The Boltcliq Company',
-    year: '2024',
-    url: 'https://boltcliq.com',
-    urlLabel: 'Visit Boltcliq',
-    image: '/profile/portfolio/boltcliq.jpg',
-    video: '/profile/portfolio/boltcliq.mp4',
-    imageAlt: 'The Boltcliq Company homepage with the headline Build the digital systems your next phase depends on.',
-    imageHost: 'boltcliq.com',
-    pitch: 'Agency site for an AI, software, and growth studio: services, consulting, and a clear path to book a conversation.',
-    detail: [
-      'The Boltcliq Company builds AI systems, software, and growth platforms. I interned on the frontend in 2024: responsive pages in HTML, CSS, and JavaScript, UI that holds up on mobile, and the cross-browser details that keep a marketing site feeling finished.',
-      'The homepage has to read in one glance for a founder who is already busy: what the studio does, who it is for, and how to start. That is the kind of page I learned to ship there.',
-    ],
-  },
-  {
     title: 'JobBox',
-    year: '2025-2026',
-    isNew: true,
+    year: 'Mar 2026 – Present',
+    productGroup: { id: 'jobbox', label: 'JobBox AI', period: 'Mar 2026 – Present' },
+    surfaceLabel: 'Marketing & landing',
     url: 'https://getjobbox.com',
     urlLabel: 'Visit JobBox',
     image: '/profile/portfolio/jobbox.jpg',
     video: '/profile/portfolio/jobbox.mp4',
     imageAlt: 'JobBox homepage with the headline Save 15+ hours weekly, Recruit Faster with AI.',
     imageHost: 'getjobbox.com',
-    pitch: 'Product design and Vue.js frontend for an AI-native recruitment workspace.',
+    pitch: 'Landing pages and marketing UI for an AI-native recruitment platform.',
     detail: [
-      'JobBox is an AI-native recruitment workspace for modern teams. I designed and built product interfaces in Figma and Vue.js so recruiters can run hiring workflows in one place, not across a pile of tabs.',
-      'The work covered user flows, high-fidelity UI, and the frontend implementation: lists, workspaces, and the everyday screens a recruitment team actually lives in.',
+      'At JobBox AI I build responsive frontend experiences for an AI-native recruitment platform, including public landing pages and product interfaces in Vue.js, JavaScript, and Tailwind CSS.',
+      'Reusable UI components and a consistent design system support recruiter and candidate-facing flows.',
     ],
   },
   {
     title: 'JobBox Dashboard',
-    year: '2025-2026',
-    isNew: true,
+    year: 'Mar 2026 – Present',
+    productGroup: { id: 'jobbox', label: 'JobBox AI', period: 'Mar 2026 – Present' },
+    surfaceLabel: 'Candidate workspace',
     url: 'https://app.getjobbox.com',
     urlLabel: 'Visit JobBox',
     image: '/profile/portfolio/jobbox-dashboard.jpg',
     video: '/profile/portfolio/jobbox-dashboard.mp4',
     imageAlt: 'JobBox dashboard with job listings, match scores, and the Home sidebar.',
     imageHost: 'app.getjobbox.com',
-    pitch: 'The recruitment workspace itself: search, listings, and the screens a hiring team lives in.',
+    pitch: 'Candidate-facing recruitment workspace — search, listings, and workflows.',
     detail: [
-      'The JobBox dashboard is the product, not the brochure. I designed and built the workspace in Figma and Vue.js: Home, job listings, match scores, and the path from a search to a role a recruiter can act on.',
-      'The interface has to stay clear under real volume — sidebar navigation, dense listing cards, and AI search without turning into a pile of panels.',
+      'Frontend work on the JobBox product interface: home, job listings, match scores, and paths from search to action.',
+      'Built with Vue.js and Tailwind CSS alongside designers and backend engineers.',
     ],
   },
   {
     title: 'JobBox Recruiter',
-    year: '2025-2026',
-    isNew: true,
+    year: 'Mar 2026 – Present',
+    productGroup: { id: 'jobbox', label: 'JobBox AI', period: 'Mar 2026 – Present' },
+    surfaceLabel: 'Recruiter workspace',
     url: 'https://app.getjobbox.com',
     urlLabel: 'Visit JobBox',
     image: '/profile/portfolio/jobbox-recruiter.jpg',
     video: '/profile/portfolio/jobbox-recruiter.mp4',
     imageAlt: 'JobBox recruiter dashboard with pipeline overview, application stats, and an applications growth chart.',
     imageHost: 'app.getjobbox.com',
-    pitch: 'The recruiter workspace: pipeline, analytics, and hiring volume in one dashboard.',
+    pitch: 'Recruiter dashboards, pipeline views, and hiring analytics.',
     detail: [
-      'The recruiter side of JobBox is a different product surface from the candidate home. I designed and built the dashboard so a hiring team can see organisations, jobs, applications, and talent network at a glance, then drill into pipeline and analytics without leaving the workspace.',
-      'The layout has to carry charts and counts without feeling like an admin dump: Quick Overview, Recruitment Pipeline, and Recruiter’s Desk in the same sidebar language as the rest of the app.',
+      'Recruiter-facing experiences at JobBox: pipeline overview, application stats, and recruitment workflows in one dashboard.',
+      'Contributed to high-performance, user-centered web applications with the engineering team.',
     ],
   },
   {
     title: 'veenna',
-    year: '2025–2026',
-    isNew: true,
+    year: 'Mar 2026 – Present',
+    productGroup: { id: 'jobbox', label: 'JobBox AI', period: 'Mar 2026 – Present' },
+    surfaceLabel: 'veenna · voice product',
     url: 'https://veenna.getjobbox.com',
     urlLabel: 'Visit veenna',
     image: '/profile/portfolio/veenna.jpg',
     video: '/profile/portfolio/veenna.mp4',
     imageAlt: 'veenna home dashboard greeting Blessing, with Marv Magic, a 14-day streak, and sidebar navigation.',
     imageHost: 'veenna.getjobbox.com',
-    pitch: 'Voice-first productivity workspace by JobBox: capture, tasks, and follow-through in one place.',
+    pitch: 'JobBox product — voice-first workspace for capture, tasks, and follow-through.',
     detail: [
-      'veenna is a voice-first workspace: speak the work, keep it organized, finish it without bouncing between apps. I designed and developed the product UI in Figma and Vue.js so capture, tasks, and follow-through feel like one product.',
+      'veenna is a voice-first productivity product inside the JobBox ecosystem. I designed and developed the product UI in Figma and Vue.js so capture, tasks, and follow-through feel like one experience.',
       'The frontend had to hold up on web and feel calm enough for daily use: navigation, workspace screens, and the path from a spoken intent to something you can act on.',
     ],
   },
   {
-    title: 'PeerPay Network',
-    year: '2025-2026',
-    url: 'https://peerpaynetwork.com',
-    urlLabel: 'Visit PeerPay Network',
-    imageHost: 'peerpaynetwork.com',
-    pitch: 'Marketing landing pages and product UI for a financial commitment and credit platform.',
+    title: 'KidsClubZone',
+    year: 'Jan 2026 – Present',
+    url: 'https://kidsclubzone.com',
+    urlLabel: 'Visit KidsClubZone',
+    image: '/profile/portfolio/kidsclubzone.jpg',
+    video: '/profile/portfolio/kidsclubzone.mp4',
+    imageAlt: 'KidsClubZone homepage with the headline Ignite Curiosity & Creativity, featuring a student learning on a laptop.',
+    imageHost: 'kidsclubzone.com',
+    pitch: 'Educational web applications in Vue.js and Tailwind CSS.',
     detail: [
-      'At PeerPay Network I design the public-facing marketing site and the in-product experiences that sit behind it: landing pages that explain the platform, plus credit dashboards and customer flows where lending and repayment have to stay clear.',
-      'Work is user flows, wireframes, prototypes, and high-fidelity UI in Figma—same design language on peerpaynetwork.com and across the fintech surfaces that follow signup.',
-    ],
-  },
-  {
-    title: 'Luvie',
-    year: '2026',
-    url: 'https://luvie.io',
-    urlLabel: 'Visit Luvie',
-    image: '/profile/portfolio/luvie.jpg',
-    video: '/profile/portfolio/luvie.mp4',
-    imageAlt: 'Luvie homepage with the headline The Connected Hair Ecosystem for Afro-Textured Hair.',
-    imageHost: 'luvie.io',
-    pitch: 'Responsive booking experiences for a beauty services marketplace.',
-    detail: [
-      'Luvie is a beauty services marketplace. I designed and developed the responsive booking experience so customers can find a stylist and complete a booking on the devices they already use.',
-      'The work combined product design with Vue.js implementation: the interface had to look right and it had to ship.',
-    ],
-  },
-  {
-    title: 'Top Universe Institute',
-    year: '2025',
-    url: 'https://topuniverse.institute',
-    urlLabel: 'Visit Top Universe Institute',
-    image: '/profile/portfolio/topuniverse.jpg',
-    video: '/profile/portfolio/topuniverse.mp4',
-    imageAlt: 'Top Universe Institute homepage with the headline AI Education Built for Africa.',
-    imageHost: 'topuniverse.institute',
-    pitch: 'Marketing site for an AI education platform serving learners across Nigeria, Ghana, and Kenya.',
-    detail: [
-      'Top Universe Institute is an AI-first education platform: practical tracks, live mentorship, and a clear path to apply. I designed and built the public site so a prospective student can understand the offer, pick a track, and start an application without getting lost.',
-      'The page had to feel serious enough for a career decision and still move: courses, outcomes, and a single primary action.',
+      'I develop responsive educational web applications: reusable UI components, dynamic learning pages, and interactive experiences that improve student engagement.',
+      'KidsClubZone is a learning platform for kids ages 6–17 combining instructors with structured learning paths.',
     ],
   },
   {
@@ -221,31 +176,94 @@ export const products: Product[] = [
     imageHost: 'topuniverse.org',
     pitch: 'Public site for a free AI academy and tech education NGO across Africa.',
     detail: [
-      'Top Universe is a free education NGO: AI Academy, career tracks, and a path from first lesson to job placement. I designed and built the public site so a learner can understand the offer, apply, and join the community without paying a tuition wall.',
-      'The homepage has to carry a live cohort, a clear apply action, and the trust of 16,000+ learners — without looking like a brochure.',
+      'I designed and built the Top Universe public site: AI Academy, career tracks, and a clear apply path for learners.',
     ],
   },
   {
     title: 'IvoryLearn',
-    year: '2025',
+    year: 'Mar 2025 – Jan 2026',
     url: 'https://www.ivorylearn.com',
     urlLabel: 'Visit IvoryLearn',
     image: '/profile/portfolio/ivorylearn.jpg',
     video: '/profile/portfolio/ivorylearn.mp4',
     imageAlt: 'IvoryLearn homepage with the headline Empowering Women to Build Careers and Grow Their Businesses.',
     imageHost: 'ivorylearn.com',
-    pitch: 'Public site and LMS interfaces for a women-led digital skills academy.',
+    pitch: 'LMS interfaces and public site for a digital skills academy.',
     detail: [
-      'IvoryLearn is a community-led platform for women building careers and businesses: programs, mentorship, and a path from first lesson to launch. I develop responsive LMS interfaces in Vue.js and Tailwind CSS, wired to backend APIs, and I built the public site so a learner can understand the offer and join without getting lost.',
-      'Navigation, accessibility, and SEO across learning pages are part of the same job, not extras.',
+      'I developed responsive LMS interfaces in Vue.js and Tailwind CSS, integrated frontend features with backend APIs, and improved navigation, accessibility, and SEO across learning pages.',
+    ],
+  },
+  {
+    title: 'Luvie',
+    year: '2025',
+    url: 'https://luvie.io',
+    urlLabel: 'Visit Luvie',
+    image: '/profile/portfolio/luvie.jpg',
+    video: '/profile/portfolio/luvie.mp4',
+    imageAlt: 'Luvie homepage with the headline The Connected Hair Ecosystem for Afro-Textured Hair.',
+    imageHost: 'luvie.io',
+    pitch: 'Vue.js & product design — responsive booking for a beauty services marketplace.',
+    detail: [
+      'I designed and developed responsive booking experiences for Luvie, a beauty services marketplace.',
+      'Customers can find a stylist and complete a booking on the devices they already use; the work combined product design with Vue.js implementation.',
+    ],
+  },
+  {
+    title: 'Top Universe Institute',
+    year: '2025',
+    url: 'https://topuniverse.institute',
+    urlLabel: 'Visit Top Universe Institute',
+    image: '/profile/portfolio/topuniverse.jpg',
+    video: '/profile/portfolio/topuniverse.mp4',
+    imageAlt: 'Top Universe Institute homepage with the headline AI Education Built for Africa.',
+    imageHost: 'topuniverse.institute',
+    pitch: 'Marketing site for an AI education platform across Nigeria, Ghana, and Kenya.',
+    detail: [
+      'I designed and built the public site for Top Universe Institute so prospective students can understand the offer and start an application.',
+    ],
+  },
+  {
+    title: 'Boltcliq',
+    year: 'Jan 2024 – Dec 2024',
+    url: 'https://boltcliq.com',
+    urlLabel: 'Visit Boltcliq',
+    image: '/profile/portfolio/boltcliq.jpg',
+    video: '/profile/portfolio/boltcliq.mp4',
+    imageAlt: 'Boltcliq homepage with the headline Build the digital systems your next phase depends on.',
+    imageHost: 'boltcliq.com',
+    pitch: 'Frontend internship — responsive marketing pages in HTML, CSS, and JavaScript.',
+    detail: [
+      'I built responsive web pages, optimized UI components for mobile and cross-browser compatibility, and improved frontend performance with senior developers during my 2024 internship.',
+    ],
+  },
+  {
+    title: 'PeerPay Network',
+    year: 'Apr 2025 – Present',
+    url: 'https://peerpaynetwork.com',
+    urlLabel: 'Visit PeerPay Network',
+    imageHost: 'peerpaynetwork.com',
+    pitch: 'UI/UX product design for digital credit products.',
+    detail: [
+      'I design responsive web and mobile experiences for digital credit products: user flows, wireframes, prototypes, and high-fidelity interfaces in Figma.',
+      'I collaborate with developers and product managers on onboarding, usability, and consistent design patterns across fintech products.',
+    ],
+  },
+  {
+    title: 'BeautiGo',
+    year: '2025',
+    pitch: 'Product design — artist acquisition for an on-demand beauty platform.',
+    detail: [
+      'I designed the artist acquisition experience for BeautiGo, an on-demand beauty platform, focusing on trust, bookings, and onboarding conversion.',
+      'The flows had to help stylists sign up and give customers enough confidence to book without friction.',
     ],
   },
   {
     title: 'CRRNetwork',
     year: '2025',
-    pitch: 'SEO-optimized responsive landing page, designed and built in Vue.js.',
+    pitch: 'Vue.js & Tailwind CSS — SEO-optimized responsive landing page.',
     detail: [
-      'CRRNetwork needed a landing page that could rank and convert. I designed and developed a responsive page in Vue.js and Tailwind CSS, with SEO and performance treated as part of the product, not an afterthought.',
+      'I designed and developed an SEO-optimized responsive landing page for CRRNetwork in Vue.js and Tailwind CSS.',
+      'SEO and performance were part of the product, not an afterthought.',
     ],
   },
 ]
@@ -277,44 +295,65 @@ export const companies: CompanyIndustryGroup[] = [
   {
     industry: 'Recruitment',
     companies: [
-      { title: 'JobBox', role: 'Product Design & Frontend', affiliation: 'AI-native recruitment workspace', year: '2025', status: '2025 – 2026', url: 'https://getjobbox.com', roles: [{ role: 'Product Design & Frontend', period: '2025 – 2026' }] },
-    ],
-  },
-  {
-    industry: 'Productivity',
-    companies: [
-      { title: 'veenna', role: 'Product Design & Frontend', affiliation: 'Voice-first workspace · By JobBox', year: '2025', status: '2025 – 2026', url: 'https://veenna.getjobbox.com', roles: [{ role: 'Product Design & Frontend', period: '2025 – 2026' }] },
+      {
+        title: 'JobBox AI',
+        role: 'Frontend Engineer',
+        affiliation: 'AI-native recruitment platform',
+        year: '2026',
+        status: 'Mar 2026 – Present',
+        url: 'https://getjobbox.com',
+        roles: [{ role: 'Frontend Engineer', period: 'Mar 2026 – Present' }],
+      },
     ],
   },
   {
     industry: 'Education',
     companies: [
-      { title: 'KidsClubZone', role: 'Frontend Developer', affiliation: 'Educational web applications', year: '2024', status: 'Present', url: 'https://kidsclubzone.com' },
-      { title: 'IvoryLearn', role: 'Frontend Developer', affiliation: 'Learning management interfaces', year: '2025', status: 'Present', url: 'https://ivorylearn.com' },
+      {
+        title: 'KidsClubZone',
+        role: 'Frontend Developer',
+        affiliation: 'Educational web applications',
+        year: '2026',
+        status: 'Jan 2026 – Present',
+        url: 'https://kidsclubzone.com',
+        roles: [{ role: 'Frontend Developer', period: 'Jan 2026 – Present' }],
+      },
+      {
+        title: 'IvoryLearn',
+        role: 'Frontend Developer',
+        affiliation: 'Learning management interfaces',
+        year: '2025',
+        status: 'Mar 2025 – Jan 2026',
+        url: 'https://ivorylearn.com',
+        roles: [{ role: 'Frontend Developer', period: 'Mar 2025 – Jan 2026' }],
+      },
     ],
   },
   {
     industry: 'Fintech',
     companies: [
-      { title: 'PeerPay Network', role: 'UI/UX Product Designer', affiliation: 'Digital lending & credit', year: '2025', status: 'Present', url: 'https://peerpaynetwork.com' },
-    ],
-  },
-  {
-    industry: 'Beauty & lifestyle',
-    companies: [
-      { title: 'Luvie', role: 'Product Design & Frontend', affiliation: 'Beauty services marketplace', year: '2025', status: 'Present', url: 'https://luvie.io' },
-    ],
-  },
-  {
-    industry: 'Community',
-    companies: [
-      { title: "The Mom's Hub", role: 'Frontend Web Developer', affiliation: 'Websites & course landing pages', year: '2025', status: 'Aug – Dec 2025' },
+      {
+        title: 'PeerPay Network',
+        role: 'UI/UX Product Designer',
+        affiliation: 'Digital credit products',
+        year: '2025',
+        status: 'Apr 2025 – Present',
+        url: 'https://peerpaynetwork.com',
+        roles: [{ role: 'UI/UX Product Designer', period: 'Apr 2025 – Present' }],
+      },
     ],
   },
   {
     industry: 'Agency',
     companies: [
-      { title: 'The Boltcliq Company', role: 'Frontend Web Development Intern', year: '2024', status: 'Jan – Dec 2024', url: 'https://boltcliq.com' },
+      {
+        title: 'Boltcliq',
+        role: 'Frontend Web Development Intern',
+        year: '2024',
+        status: 'Jan 2024 – Dec 2024',
+        url: 'https://boltcliq.com',
+        roles: [{ role: 'Frontend Web Development Intern', period: 'Jan 2024 – Dec 2024' }],
+      },
     ],
   },
 ]
@@ -336,23 +375,13 @@ export type ExperienceGroup = {
 
 export const experience: ExperienceGroup[] = [
   {
-    company: 'JobBox',
+    company: 'JobBox AI',
     url: 'https://getjobbox.com',
-    detail: 'AI-native recruitment workspace',
+    detail: 'AI-native recruitment platform',
     summary:
-      'I designed and built Vue.js product interfaces for JobBox, an AI-native recruitment workspace. User flows, Figma UI, and the frontend that recruiters use every day: workspaces, lists, and hiring screens that have to stay clear under real volume.',
+      'I collaborate with the engineering team to build responsive frontend experiences for JobBox, an AI-native recruitment platform. I develop landing pages and product interfaces in Vue.js, JavaScript, and Tailwind CSS; build reusable UI components; and contribute to a consistent design system. I work with product designers and backend engineers on recruiter and candidate-facing experiences, including dashboards and recruitment workflows.',
     roles: [
-      { role: 'Product Design & Frontend', period: '2025 – 2026' },
-    ],
-  },
-  {
-    company: 'veenna',
-    url: 'https://veenna.getjobbox.com',
-    detail: 'Voice-first productivity workspace',
-    summary:
-      'I designed and developed the veenna product UI in Figma and Vue.js. veenna is a voice-first workspace for getting things done: tasks, notes, and agent follow-through in one place. The job was to make that feel usable, not like a demo of voice features.',
-    roles: [
-      { role: 'Product Design & Frontend', period: '2025 – 2026' },
+      { role: 'Frontend Engineer', period: 'Mar 2026 – Present' },
     ],
   },
   {
@@ -360,17 +389,17 @@ export const experience: ExperienceGroup[] = [
     url: 'https://kidsclubzone.com',
     detail: 'Educational web applications',
     summary:
-      'I build responsive educational web applications in Vue.js and Tailwind CSS. Reusable UI components, dynamic learning pages, and interactive experiences that keep students engaged. The work is always with designers and other engineers, and it has to hold up on mobile.',
+      'I develop responsive educational web applications in Vue.js and Tailwind CSS: reusable UI components, dynamic pages for learning platforms, and interactive experiences that improve student engagement. I collaborate with designers and developers on scalable, user-centered interfaces, responsive layout, and performance optimization.',
     roles: [
-      { role: 'Frontend Developer', period: 'Jan 2024 – Present' },
+      { role: 'Frontend Developer', period: 'Jan 2026 – Present' },
     ],
   },
   {
     company: 'PeerPay Network',
     url: 'https://peerpaynetwork.com',
-    detail: 'Digital lending & credit',
+    detail: 'Digital credit products',
     summary:
-      'I design marketing landing pages and product UI for PeerPay Network: public pages on peerpaynetwork.com, credit dashboards, and customer-facing flows for digital lending. User flows, wireframes, prototypes, and high-fidelity interfaces in Figma, with one consistent design language from first visit through in-app use.',
+      'I design responsive web and mobile experiences for digital credit products. I create user flows, wireframes, prototypes, and high-fidelity interfaces in Figma; collaborate with developers and product managers to improve onboarding and usability; and maintain consistent design patterns across multiple fintech products.',
     roles: [
       { role: 'UI/UX Product Designer', period: 'Apr 2025 – Present' },
     ],
@@ -380,26 +409,17 @@ export const experience: ExperienceGroup[] = [
     url: 'https://ivorylearn.com',
     detail: 'Learning management interfaces',
     summary:
-      'I develop responsive LMS interfaces in Vue.js and Tailwind CSS, wired to backend APIs. Navigation, accessibility, and SEO across learning pages are part of the same job, not extras.',
+      'I developed responsive LMS interfaces in Vue.js and Tailwind CSS, integrated frontend features with backend APIs, and improved navigation, accessibility, and SEO across learning pages.',
     roles: [
-      { role: 'Frontend Developer', period: 'Sep 2025 – Present' },
+      { role: 'Frontend Developer', period: 'Mar 2025 – Jan 2026' },
     ],
   },
   {
-    company: "The Mom's Hub",
-    detail: 'Websites & course landing pages',
-    summary:
-      'I designed and developed responsive websites and course landing pages in HTML, CSS, and JavaScript. Stakeholders brought the business requirements; I turned them into pages people could actually use.',
-    roles: [
-      { role: 'Frontend Web Developer', period: 'Aug 2025 – Dec 2025' },
-    ],
-  },
-  {
-    company: 'The Boltcliq Company',
+    company: 'Boltcliq',
     url: 'https://boltcliq.com',
     detail: 'Software development agency',
     summary:
-      'Internship year on responsive web pages in HTML, CSS, and JavaScript. I optimized UI components for mobile and cross-browser compatibility, and worked with senior developers to debug and improve frontend performance.',
+      'I built responsive web pages in HTML, CSS, and JavaScript, optimized UI components for mobile responsiveness and cross-browser compatibility, and debugged and improved frontend performance with senior developers.',
     roles: [
       { role: 'Frontend Web Development Intern', period: 'Jan 2024 – Dec 2024' },
     ],

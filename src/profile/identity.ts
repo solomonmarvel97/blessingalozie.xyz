@@ -9,7 +9,7 @@ export const identity = {
   host: 'blessingalozie.xyz',
   location: 'Nigeria',
   linkedin: 'https://www.linkedin.com/in/blessingalozie1',
-  resumeHref: '/profile/resume.docx',
+  resumeHref: '/profile/my-resume.pdf',
   profileImage: '/profile/profile.jpg?v=1',
   ogImagePath: '/profile/og-banner.webp',
   ogImageWidth: 1200,

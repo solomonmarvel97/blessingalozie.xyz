@@ -4,28 +4,41 @@
 
   <url>
     <loc>https://blessingalozie.xyz/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
+      <image:loc>https://blessingalozie.xyz/profile/og-banner.webp</image:loc>
+      <image:title>Blessing Alozie — Product Designer &amp; Frontend Engineer</image:title>
+      <image:caption>Open Graph banner for Blessing Alozie, product designer and frontend engineer.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://blessingalozie.xyz/profile/profile.jpg</image:loc>
-      <image:title>Blessing Alozie, Product Designer &amp; Frontend Engineer</image:title>
-      <image:caption>Profile photo of Blessing Alozie, a product designer and frontend engineer.</image:caption>
+      <image:title>Blessing Alozie profile photo</image:title>
+      <image:caption>Profile photo of Blessing Alozie.</image:caption>
     </image:image>
   </url>
 
   <url>
     <loc>https://blessingalozie.xyz/about</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blessingalozie.xyz/profile/og-banner.webp</image:loc>
+      <image:title>About Blessing Alozie</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://blessingalozie.xyz/experience</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://blessingalozie.xyz/profile/og-banner.webp</image:loc>
+      <image:title>Experience — Blessing Alozie</image:title>
+    </image:image>
   </url>
 
 </urlset>

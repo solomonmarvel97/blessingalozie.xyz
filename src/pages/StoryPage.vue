@@ -4,35 +4,21 @@ import { usePageMeta } from '@/composables/usePageMeta'
 import { useProfileSectionAnimations } from '@/composables/useProfilePageAnimations'
 import { injectAboutStructuredData } from '@/profile/injectStructuredData'
 import { seo } from '@/profile/positioning'
-import { identity, pageUrl, assetUrl } from '@/profile/identity'
+import { identity } from '@/profile/identity'
+import { buildPageMeta } from '@/profile/siteMeta'
 import ProfileBioSection from '@/components/profile/ProfileBioSection.vue'
 
 defineProps<{
   isDark: boolean
 }>()
 
-usePageMeta({
+usePageMeta(buildPageMeta({
   title: seo.aboutTitle,
   description: seo.aboutDescription,
-  canonical: pageUrl('/about'),
-  keywords: seo.keywords,
-  og: {
-    type: 'profile',
-    title: seo.aboutTitle,
-    description: seo.aboutDescription,
-    url: pageUrl('/about'),
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageWidth: 1200,
-    imageHeight: 630,
-    imageAlt: seo.imageAlt,
-  },
-  twitter: {
-    title: seo.aboutTitle,
-    description: seo.aboutDescription,
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageAlt: seo.imageAlt,
-  },
-})
+  canonicalPath: '/about',
+  keywords: seo.aboutKeywords,
+  ogType: 'profile',
+}))
 
 const emailCopied = ref(false)
 const pageRoot = ref<HTMLElement | null>(null)

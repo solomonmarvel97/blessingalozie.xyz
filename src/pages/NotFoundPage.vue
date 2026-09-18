@@ -1,14 +1,23 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import { usePageMeta } from '@/composables/usePageMeta'
+import { buildPageMeta } from '@/profile/siteMeta'
 
 const router = useRouter()
 const isDark = ref(true)
 
+usePageMeta(buildPageMeta({
+  title: 'Page Not Found | Blessing Alozie',
+  description: 'This page does not exist. Return to Blessing Alozie\'s product design and frontend engineering portfolio.',
+  canonicalPath: '/',
+  robots: 'noindex, follow',
+  skipCanonical: true,
+}))
+
 onMounted(() => {
   const saved = localStorage.getItem('theme')
   if (saved) isDark.value = saved === 'dark'
-  document.title = '404 - Page Not Found'
 })
 </script>
 

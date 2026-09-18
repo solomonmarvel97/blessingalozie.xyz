@@ -106,7 +106,7 @@ export const products: Product[] = [
   },
   {
     title: 'JobBox',
-    year: '2025–2026',
+    year: '2025-2026',
     isNew: true,
     url: 'https://getjobbox.com',
     urlLabel: 'Visit JobBox',
@@ -122,7 +122,7 @@ export const products: Product[] = [
   },
   {
     title: 'JobBox Dashboard',
-    year: '2025–2026',
+    year: '2025-2026',
     isNew: true,
     url: 'https://app.getjobbox.com',
     urlLabel: 'Visit JobBox',
@@ -138,7 +138,7 @@ export const products: Product[] = [
   },
   {
     title: 'JobBox Recruiter',
-    year: '2025–2026',
+    year: '2025-2026',
     isNew: true,
     url: 'https://app.getjobbox.com',
     urlLabel: 'Visit JobBox',
@@ -169,17 +169,20 @@ export const products: Product[] = [
     ],
   },
   {
-    title: 'PeerPay Credit Dashboard',
-    year: '2025',
-    pitch: 'Dashboards and customer credit experiences for a fintech platform.',
+    title: 'PeerPay Network',
+    year: '2025-2026',
+    url: 'https://peerpaynetwork.com',
+    urlLabel: 'Visit PeerPay Network',
+    imageHost: 'peerpaynetwork.com',
+    pitch: 'Marketing landing pages and product UI for a financial commitment and credit platform.',
     detail: [
-      'I designed the PeerPay credit dashboard and customer-facing credit experiences. The job was to make lending and repayment feel understandable, not like a spreadsheet dropped into a browser.',
-      'Work covered user flows, wireframes, prototypes, and high-fidelity interfaces in Figma, kept consistent across the fintech products around it.',
+      'At PeerPay Network I design the public-facing marketing site and the in-product experiences that sit behind it: landing pages that explain the platform, plus credit dashboards and customer flows where lending and repayment have to stay clear.',
+      'Work is user flows, wireframes, prototypes, and high-fidelity UI in Figma—same design language on peerpaynetwork.com and across the fintech surfaces that follow signup.',
     ],
   },
   {
     title: 'Luvie',
-    year: '2025',
+    year: '2026',
     url: 'https://luvie.io',
     urlLabel: 'Visit Luvie',
     image: '/profile/portfolio/luvie.jpg',
@@ -367,7 +370,7 @@ export const experience: ExperienceGroup[] = [
     url: 'https://peerpaynetwork.com',
     detail: 'Digital lending & credit',
     summary:
-      'I design responsive web and mobile experiences for digital lending and credit products. User flows, wireframes, prototypes, and high-fidelity interfaces in Figma, with a consistent design language across the fintech products. The focus is onboarding and usability: credit should be understandable.',
+      'I design marketing landing pages and product UI for PeerPay Network: public pages on peerpaynetwork.com, credit dashboards, and customer-facing flows for digital lending. User flows, wireframes, prototypes, and high-fidelity interfaces in Figma, with one consistent design language from first visit through in-app use.',
     roles: [
       { role: 'UI/UX Product Designer', period: 'Apr 2025 – Present' },
     ],

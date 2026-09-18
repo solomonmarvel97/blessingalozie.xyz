@@ -23,7 +23,7 @@ export const positioning = {
   salesOutcome:
     'The outcome I sell is a product experience in production: designed in Figma, built in Vue.js, responsive, accessible, and fast enough to keep. That is how I work on learning platforms, credit products, and booking flows.',
   salesAuthority:
-    'I am a product designer and frontend engineer. I designed and built product UI for JobBox and veenna, design credit experiences at PeerPay Network, and ship educational interfaces at KidsClubZone and IvoryLearn. I have also shipped booking and landing work for Luvie and CRRNetwork.',
+    'I am a product designer and frontend engineer. I designed and built product UI for JobBox and veenna, design landing pages and credit product UI at PeerPay Network, and ship educational interfaces at KidsClubZone and IvoryLearn. I have also shipped booking and landing work for Luvie and CRRNetwork.',
   salesCta: 'If you need the interface designed and shipped, start a project.',
   ctaKicker: 'Ready when the work is real',
   ctaHeadline: 'Design it. Build it. Ship it.',
@@ -34,16 +34,20 @@ export const positioning = {
 export const seo = {
   homeTitle: 'Product Designer & Frontend Engineer | Blessing Alozie',
   homeDescription:
-    'Blessing Alozie is a product designer and frontend engineer who designs and builds user-centered digital products in Vue.js, from Figma to production.',
+    'Blessing Alozie designs and builds user-centered products in Vue.js—from Figma to production. Open for product design and frontend work in education, fintech, and consumer apps.',
   keywords:
-    'Blessing Alozie, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, Tailwind CSS, accessible web design, product design Nigeria',
+    'Blessing Alozie, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, hire product designer Nigeria, Tailwind CSS, accessible web design',
   imageAlt: identity.imageAlt,
   aboutTitle: 'About Blessing Alozie | Product Designer & Frontend Engineer',
   aboutDescription:
-    'About Blessing Alozie: product designer and frontend engineer shipping Vue.js products in education, fintech, and consumer services.',
-  experienceTitle: 'Experience | Blessing Alozie',
+    'About Blessing Alozie: how she works across UX, product design, and Vue.js—background, approach, and the kind of products she ships for teams worldwide.',
+  aboutKeywords:
+    'About Blessing Alozie, product designer bio, frontend engineer Nigeria, Vue.js designer, Figma to code',
+  experienceTitle: 'Experience | Blessing Alozie – Product Design & Frontend',
   experienceDescription:
-    'Experience of Blessing Alozie across JobBox, veenna, KidsClubZone, PeerPay Network, IvoryLearn, The Mom\'s Hub, and The Boltcliq Company.',
+    'Work history and shipped product UI: KidsClubZone, PeerPay Network, IvoryLearn, JobBox, veenna, Luvie, CRRNetwork, The Mom\'s Hub, and The Boltcliq Company.',
+  experienceKeywords:
+    'Blessing Alozie experience, product design portfolio, Vue.js work history, KidsClubZone, PeerPay Network, IvoryLearn',
 } as const
 
 export const faqs = [

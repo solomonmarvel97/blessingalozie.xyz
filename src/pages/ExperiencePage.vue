@@ -5,7 +5,7 @@ import { useProfileSectionAnimations } from '@/composables/useProfilePageAnimati
 import { injectSectionStructuredData } from '@/profile/injectStructuredData'
 import { companies, experience } from '@/profile/data'
 import { seo } from '@/profile/positioning'
-import { pageUrl, assetUrl } from '@/profile/identity'
+import { buildPageMeta } from '@/profile/siteMeta'
 import ProfileExperienceSection from '@/components/profile/ProfileExperienceSection.vue'
 import ProfileCompaniesSection from '@/components/profile/ProfileCompaniesSection.vue'
 
@@ -16,34 +16,18 @@ defineProps<{
 const title = seo.experienceTitle
 const description = seo.experienceDescription
 
-usePageMeta({
+usePageMeta(buildPageMeta({
   title,
   description,
-  canonical: pageUrl('/experience'),
-  keywords: seo.keywords,
-  og: {
-    type: 'profile',
-    title,
-    description,
-    url: pageUrl('/experience'),
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageWidth: 1200,
-    imageHeight: 630,
-    imageAlt: seo.imageAlt,
-  },
-  twitter: {
-    title,
-    description,
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageAlt: seo.imageAlt,
-  },
-})
+  canonicalPath: '/experience',
+  keywords: seo.experienceKeywords,
+  ogType: 'website',
+}))
 
 const pageRoot = ref<HTMLElement | null>(null)
 useProfileSectionAnimations(pageRoot)
 
 onMounted(() => {
-  document.title = title
   injectSectionStructuredData({
     path: '/experience',
     name: title,

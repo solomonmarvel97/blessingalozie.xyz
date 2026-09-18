@@ -10,7 +10,7 @@ import {
   products,
 } from '@/profile/data'
 import { faqs, seo } from '@/profile/positioning'
-import { pageUrl, assetUrl } from '@/profile/identity'
+import { buildPageMeta } from '@/profile/siteMeta'
 import type { InquiryIntent } from '@/profile/inquiries'
 import ProfileFractionalCtoCard from '@/components/profile/ProfileFractionalCtoCard.vue'
 import ProfileBusinessValueSection from '@/components/profile/ProfileBusinessValueSection.vue'
@@ -27,38 +27,18 @@ const emit = defineEmits<{
   inquiry: [intent: InquiryIntent]
 }>()
 
-const title = seo.homeTitle
-const description = seo.homeDescription
-const imageAlt = seo.imageAlt
-
-usePageMeta({
-  title,
-  description,
-  canonical: pageUrl('/'),
+usePageMeta(buildPageMeta({
+  title: seo.homeTitle,
+  description: seo.homeDescription,
+  canonicalPath: '/',
   keywords: seo.keywords,
-  og: {
-    type: 'profile',
-    title,
-    description,
-    url: pageUrl('/'),
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageWidth: 1200,
-    imageHeight: 630,
-    imageAlt,
-  },
-  twitter: {
-    title,
-    description,
-    image: assetUrl('/profile/og-banner.jpg'),
-    imageAlt,
-  },
-})
+  ogType: 'profile',
+}))
 
 const pageRoot = ref<HTMLElement | null>(null)
 useProfileSectionAnimations(pageRoot)
 
 onMounted(() => {
-  document.title = title
   injectProfileStructuredData()
 })
 </script>

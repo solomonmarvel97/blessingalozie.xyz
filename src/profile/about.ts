@@ -35,7 +35,7 @@ export const aboutStory: {
       body: [
         'At JobBox I designed and built Vue.js interfaces for an AI-native recruitment workspace. At veenna I did the same for a voice-first productivity product: capture, tasks, and follow-through in one UI.',
         'At KidsClubZone I build educational web applications: reusable Vue.js components, dynamic learning pages, and interactive experiences for students. At IvoryLearn I do the same for LMS interfaces, including API-backed pages, navigation, accessibility, and SEO.',
-        'At PeerPay Network I design web and mobile experiences for digital lending and credit: user flows, wireframes, prototypes, and high-fidelity interfaces, with a consistent design language across the fintech products.',
+        'At PeerPay Network I design marketing landing pages and product UI for digital lending and credit—public site pages, dashboards, and customer flows—with user flows, wireframes, prototypes, and high-fidelity interfaces in Figma.',
         'I have also designed and built booking experiences for Luvie, the CRRNetwork landing page, and websites and course pages for The Mom\'s Hub. I started as a frontend intern at The Boltcliq Company in 2024.',
       ],
     },

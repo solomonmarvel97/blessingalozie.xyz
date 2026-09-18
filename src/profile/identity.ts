@@ -11,7 +11,10 @@ export const identity = {
   linkedin: 'https://www.linkedin.com/in/blessingalozie1',
   resumeHref: '/profile/resume.docx',
   profileImage: '/profile/profile.jpg?v=1',
-  ogImagePath: '/profile/og-banner.jpg',
+  ogImagePath: '/profile/og-banner.webp',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageType: 'image/webp',
   imageAlt: 'Blessing Alozie, product designer and frontend engineer',
 } as const
 

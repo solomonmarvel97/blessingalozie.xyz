@@ -2,14 +2,13 @@ import { identity } from './identity'
 
 /** Premium positioning: specific person + specific outcome + proof. */
 export const positioning = {
-  title: 'Product Designer & Frontend Engineer',
-  headline:
-    'I design and build user-centered digital products from concept to implementation, combining UX design, product thinking, and frontend engineering.',
+  title: identity.jobTitle,
+  headline: identity.tagline,
   subhead:
-    'Currently at JobBox AI, KidsClubZone, and PeerPay Network. Previously IvoryLearn and Boltcliq.',
+    'Currently shipping at KidsClubZone, PeerPay Network, and IvoryLearn. Previously The Mom\'s Hub and The Boltcliq Company.',
   contrarian:
     'Most products do not fail because of missing features. They fail because the interface is hard to trust, hard to use, or never gets built.',
-  availabilityTitle: 'Open for product design and frontend work',
+  availabilityTitle: 'Open for design engineering work',
   availabilitySubtitle:
     'Figma to Vue.js. Limited capacity.',
   availabilityCta: 'Start a project',
@@ -23,7 +22,7 @@ export const positioning = {
   salesOutcome:
     'The outcome I sell is a product experience in production: designed in Figma, built in Vue.js, responsive, accessible, and fast enough to keep. That is how I work on learning platforms, credit products, and booking flows.',
   salesAuthority:
-    'I am a product designer and frontend engineer. I am frontend engineer at JobBox AI, frontend developer at KidsClubZone, UI/UX product designer at PeerPay Network, and I have shipped featured project work including BeautiGo, Luvie, and CRRNetwork.',
+    'I am a design engineer. I am frontend engineer at JobBox AI, frontend developer at KidsClubZone, UI/UX product designer at PeerPay Network, and I have shipped featured project work including BeautiGo, Luvie, and CRRNetwork.',
   salesCta: 'If you need the interface designed and shipped, start a project.',
   ctaKicker: 'Ready when the work is real',
   ctaHeadline: 'Design it. Build it. Ship it.',
@@ -32,20 +31,20 @@ export const positioning = {
 } as const
 
 export const seo = {
-  homeTitle: 'Product Designer & Frontend Engineer | Blessing Alozie',
+  homeTitle: 'Design Engineer | Blessing Alozie',
   homeDescription:
-    'Blessing Alozie designs and builds user-centered products in Vue.js—from Figma to production. Open for product design and frontend work in education, fintech, and consumer apps.',
+    'Blessing Alozie is a design engineer who designs in Figma and builds in Vue.js, from interface to production. Open for work in education, fintech, and consumer apps.',
   keywords:
-    'Blessing Alozie, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, hire product designer Nigeria, Tailwind CSS, accessible web design',
+    'Blessing Alozie, design engineer, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, Nigeria, Tailwind CSS, accessible web design',
   imageAlt: identity.imageAlt,
-  aboutTitle: 'About Blessing Alozie | Product Designer & Frontend Engineer',
+  aboutTitle: 'About Blessing Alozie | Design Engineer',
   aboutDescription:
-    'About Blessing Alozie: how she works across UX, product design, and Vue.js—background, approach, and the kind of products she ships for teams worldwide.',
+    'About Blessing Alozie: how she works across UX, product design, and Vue.js. Background, approach, and the kind of products she ships for teams worldwide.',
   aboutKeywords:
-    'About Blessing Alozie, product designer bio, frontend engineer Nigeria, Vue.js designer, Figma to code',
-  experienceTitle: 'Experience | Blessing Alozie – Product Design & Frontend',
+    'About Blessing Alozie, design engineer, product designer bio, Vue.js developer Nigeria, Figma to code',
+  experienceTitle: 'Experience | Blessing Alozie | Design Engineer',
   experienceDescription:
-    'Professional experience at JobBox AI, KidsClubZone, PeerPay Network, IvoryLearn, and Boltcliq—plus featured product work on this site.',
+    'Professional experience at JobBox AI, KidsClubZone, PeerPay Network, IvoryLearn, and Boltcliq, plus featured product work on this site.',
   experienceKeywords:
     'Blessing Alozie experience, product design portfolio, Vue.js work history, JobBox AI, KidsClubZone, PeerPay Network',
 } as const

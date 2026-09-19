@@ -9,8 +9,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://blessingalozie.xyz/profile/og-banner.webp</image:loc>
-      <image:title>Blessing Alozie — Product Designer &amp; Frontend Engineer</image:title>
-      <image:caption>Open Graph banner for Blessing Alozie, product designer and frontend engineer.</image:caption>
+      <image:title>Blessing Alozie | Design Engineer</image:title>
+      <image:caption>Open Graph banner for Blessing Alozie, design engineer.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://blessingalozie.xyz/profile/profile.jpg</image:loc>
@@ -37,7 +37,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://blessingalozie.xyz/profile/og-banner.webp</image:loc>
-      <image:title>Experience — Blessing Alozie</image:title>
+      <image:title>Experience | Blessing Alozie</image:title>
     </image:image>
   </url>
 

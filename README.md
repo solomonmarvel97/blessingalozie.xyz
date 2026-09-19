@@ -1,6 +1,6 @@
 # Blessing Alozie - Website
 
-Personal landing site for Blessing Alozie (Product Designer & Frontend Engineer), built with Vue 3, TypeScript, and Vite.
+Personal landing site for Blessing Alozie (Design Engineer), built with Vue 3, TypeScript, and Vite.
 
 ## Requirements
 

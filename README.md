@@ -9,7 +9,7 @@ Personal landing site for Blessing Alozie (Product Designer & Frontend Engineer)
 ## Setup
 
 ```bash
-npm install
+npm install 
 ```
 
 ## Scripts

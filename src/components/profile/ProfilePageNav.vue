@@ -3,6 +3,7 @@ import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { PhList, PhX, PhDotsThreeVertical, PhImage } from '@phosphor-icons/vue'
 import { haptic } from '@/lib/haptics'
+import { identity } from '@/profile/identity'
 
 const props = defineProps<{
   isDark: boolean
@@ -196,7 +197,7 @@ function desktopLinkClass(active: boolean) {
           aria-hidden="true"
         >
           <img
-            src="/profile/profile.jpg?v=1"
+            :src="identity.profileImage"
             alt=""
             width="32"
             height="32"

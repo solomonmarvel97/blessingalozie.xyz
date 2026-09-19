@@ -19,7 +19,7 @@ export const aboutStory: {
 } = {
   pageTitle: 'About Blessing Alozie',
   intro:
-    'I am a product designer and frontend engineer. I design the experience, then I build it in Vue.js. This is the short version: how I work, what I have shipped, and where I am pointed.',
+    'I am a design engineer. I design the experience in Figma, then I build it in Vue.js. This is the short version: how I work, what I have shipped, and where I am pointed.',
   sections: [
     {
       id: 'work',

@@ -77,7 +77,7 @@ export type Product = {
     label: string
     period: string
   }
-  /** Shown instead of `year` on the card — use for surfaces under the same employer/product. */
+  /** Shown instead of `year` on the card for surfaces under the same employer/product. */
   surfaceLabel?: string
 }
 
@@ -110,7 +110,7 @@ export const products: Product[] = [
     video: '/profile/portfolio/jobbox-dashboard.mp4',
     imageAlt: 'JobBox dashboard with job listings, match scores, and the Home sidebar.',
     imageHost: 'app.getjobbox.com',
-    pitch: 'Candidate-facing recruitment workspace — search, listings, and workflows.',
+    pitch: 'Candidate-facing recruitment workspace: search, listings, and workflows.',
     detail: [
       'Frontend work on the JobBox product interface: home, job listings, match scores, and paths from search to action.',
       'Built with Vue.js and Tailwind CSS alongside designers and backend engineers.',
@@ -144,7 +144,7 @@ export const products: Product[] = [
     video: '/profile/portfolio/veenna.mp4',
     imageAlt: 'veenna home dashboard greeting Blessing, with Marv Magic, a 14-day streak, and sidebar navigation.',
     imageHost: 'veenna.getjobbox.com',
-    pitch: 'JobBox product — voice-first workspace for capture, tasks, and follow-through.',
+    pitch: 'JobBox product: voice-first workspace for capture, tasks, and follow-through.',
     detail: [
       'veenna is a voice-first productivity product inside the JobBox ecosystem. I designed and developed the product UI in Figma and Vue.js so capture, tasks, and follow-through feel like one experience.',
       'The frontend had to hold up on web and feel calm enough for daily use: navigation, workspace screens, and the path from a spoken intent to something you can act on.',
@@ -202,7 +202,7 @@ export const products: Product[] = [
     video: '/profile/portfolio/luvie.mp4',
     imageAlt: 'Luvie homepage with the headline The Connected Hair Ecosystem for Afro-Textured Hair.',
     imageHost: 'luvie.io',
-    pitch: 'Vue.js & product design — responsive booking for a beauty services marketplace.',
+    pitch: 'Vue.js and product design for responsive booking on a beauty services marketplace.',
     detail: [
       'I designed and developed responsive booking experiences for Luvie, a beauty services marketplace.',
       'Customers can find a stylist and complete a booking on the devices they already use; the work combined product design with Vue.js implementation.',

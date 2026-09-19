@@ -2,11 +2,11 @@
 
 Personal landing site for Blessing Alozie (Design Engineer), built with Vue 3, TypeScript, and Vite.
 
-## Requirements
+## The Requirements
 
 - [Node.js](https://nodejs.org/) (LTS recommended)
 
-## Setup
+## Setup 
 
 ```bash
 npm install 

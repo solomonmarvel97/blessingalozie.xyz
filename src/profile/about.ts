@@ -19,7 +19,7 @@ export const aboutStory: {
 } = {
   pageTitle: 'About Blessing Alozie',
   intro:
-    'I am a design engineer. I design the experience in Figma, then I build it in Vue.js. This is the short version: how I work, what I have shipped, and where I am pointed.',
+    'I am a frontend developer and product designer. I design the experience in Figma, then I build it in Vue.js. This is the short version: how I work, what I have shipped, and where I am pointed.',
   sections: [
     {
       id: 'work',
@@ -33,8 +33,8 @@ export const aboutStory: {
       id: 'shipped',
       title: 'What I have shipped',
       body: [
-        'At JobBox AI I build responsive frontend experiences for an AI-native recruitment platform: landing pages, product UI, and recruiter and candidate workflows in Vue.js and Tailwind CSS. At KidsClubZone I develop educational web applications. At PeerPay Network I design digital credit products in Figma.',
-        'I was frontend developer at IvoryLearn (Mar 2025 – Jan 2026) and frontend intern at Boltcliq in 2024.',
+        'At JobBox AI I build responsive frontend experiences for an AI-native recruitment platform: landing pages, product UI, and recruiter and candidate workflows in Vue.js and Tailwind CSS. At PeerPay Network I design digital credit products in Figma.',
+        'I was frontend developer at IvoryLearn (Oct 2025 – Mar 2026) and frontend intern at Boltcliq in 2024.',
         'Featured projects on this site and my resume include BeautiGo, Luvie, and CRRNetwork, plus additional product work such as veenna.',
       ],
     },
@@ -58,8 +58,8 @@ export const aboutStory: {
       id: 'now',
       title: 'What I am building now',
       body: [
-        'Product design and frontend engineering for teams that need both. Live work is at JobBox AI, KidsClubZone, and PeerPay Network.',
-        'I am available for product design and Vue.js work when the product is a fit.',
+        'Product design and frontend engineering for teams that need both. Live work is at JobBox AI and PeerPay Network.',
+        'I am available for frontend development and product design work when the product is a fit.',
       ],
     },
     {

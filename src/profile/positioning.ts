@@ -5,10 +5,10 @@ export const positioning = {
   title: identity.jobTitle,
   headline: identity.tagline,
   subhead:
-    'Currently shipping at KidsClubZone, PeerPay Network, and IvoryLearn. Previously The Mom\'s Hub and The Boltcliq Company.',
+    'Currently shipping at JobBox AI and PeerPay Network. Previously IvoryLearn and Boltcliq.',
   contrarian:
     'Most products do not fail because of missing features. They fail because the interface is hard to trust, hard to use, or never gets built.',
-  availabilityTitle: 'Open for design engineering work',
+  availabilityTitle: 'Open for frontend development and product design work',
   availabilitySubtitle:
     'Figma to Vue.js. Limited capacity.',
   availabilityCta: 'Start a project',
@@ -22,7 +22,7 @@ export const positioning = {
   salesOutcome:
     'The outcome I sell is a product experience in production: designed in Figma, built in Vue.js, responsive, accessible, and fast enough to keep. That is how I work on learning platforms, credit products, and booking flows.',
   salesAuthority:
-    'I am a design engineer. I am frontend engineer at JobBox AI, frontend developer at KidsClubZone, UI/UX product designer at PeerPay Network, and I have shipped featured project work including BeautiGo, Luvie, and CRRNetwork.',
+    'I am a frontend developer and product designer. I am frontend engineer at JobBox AI and UI/UX product designer at PeerPay Network, and I have shipped featured project work including BeautiGo, Luvie, and CRRNetwork.',
   salesCta: 'If you need the interface designed and shipped, start a project.',
   ctaKicker: 'Ready when the work is real',
   ctaHeadline: 'Design it. Build it. Ship it.',
@@ -31,22 +31,22 @@ export const positioning = {
 } as const
 
 export const seo = {
-  homeTitle: 'Design Engineer | Blessing Alozie',
+  homeTitle: 'Frontend Developer & Product Designer | Blessing Alozie',
   homeDescription:
-    'Blessing Alozie is a design engineer who designs in Figma and builds in Vue.js, from interface to production. Open for work in education, fintech, and consumer apps.',
+    'Blessing Alozie is a frontend developer and product designer who designs in Figma and builds in Vue.js, from interface to production. Open for work in education, fintech, and consumer apps.',
   keywords:
-    'Blessing Alozie, design engineer, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, Nigeria, Tailwind CSS, accessible web design',
+    'Blessing Alozie, frontend developer, product designer, frontend engineer, Vue.js developer, Figma, UX design, UI design, Nigeria, Tailwind CSS, accessible web design',
   imageAlt: identity.imageAlt,
-  aboutTitle: 'About Blessing Alozie | Design Engineer',
+  aboutTitle: 'About Blessing Alozie | Frontend Developer & Product Designer',
   aboutDescription:
     'About Blessing Alozie: how she works across UX, product design, and Vue.js. Background, approach, and the kind of products she ships for teams worldwide.',
   aboutKeywords:
-    'About Blessing Alozie, design engineer, product designer bio, Vue.js developer Nigeria, Figma to code',
-  experienceTitle: 'Experience | Blessing Alozie | Design Engineer',
+    'About Blessing Alozie, frontend developer, product designer bio, Vue.js developer Nigeria, Figma to code',
+  experienceTitle: 'Experience | Blessing Alozie | Frontend Developer & Product Designer',
   experienceDescription:
-    'Professional experience at JobBox AI, KidsClubZone, PeerPay Network, IvoryLearn, and Boltcliq, plus featured product work on this site.',
+    'Professional experience at JobBox AI, PeerPay Network, IvoryLearn, and Boltcliq, plus featured product work on this site.',
   experienceKeywords:
-    'Blessing Alozie experience, product design portfolio, Vue.js work history, JobBox AI, KidsClubZone, PeerPay Network',
+    'Blessing Alozie experience, product design portfolio, Vue.js work history, JobBox AI, PeerPay Network',
 } as const
 
 export const faqs = [
@@ -58,7 +58,7 @@ export const faqs = [
   {
     question: 'What kind of products do you work on?',
     answer:
-      'Learning platforms, fintech credit products, recruitment workspaces, and marketing sites that have to convert. Recent work includes JobBox AI, KidsClubZone, PeerPay Network, BeautiGo, Luvie, and CRRNetwork.',
+      'Learning platforms, fintech credit products, recruitment workspaces, and marketing sites that have to convert. Recent work includes JobBox AI, PeerPay Network, BeautiGo, Luvie, and CRRNetwork.',
   },
   {
     question: 'Can you work from an existing Figma file or codebase?',

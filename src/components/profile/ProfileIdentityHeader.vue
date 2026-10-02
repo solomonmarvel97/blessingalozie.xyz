@@ -45,14 +45,26 @@ defineProps<{
         <PhLinkedinLogo :size="13" weight="bold" />
       </a>
       <a
-        :href="identity.resumeHref"
+        :href="identity.resumeDeveloperHref"
         target="_blank"
         rel="noopener noreferrer"
+        title="Resume: Frontend Developer"
         class="flex items-center justify-center w-7 h-7 rounded-full transition-colors"
         :class="isDark ? 'bg-[#2a2a28] text-[#aaa] hover:text-[#e8e5de]' : 'bg-[#e8e5de] text-[#555] hover:text-[#1a1a1a]'"
-        :aria-label="`${identity.name} resume`"
+        :aria-label="`${identity.name} resume, frontend developer`"
       >
         <PhFileText :size="13" weight="bold" />
+      </a>
+      <a
+        :href="identity.resumeDesignerHref"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Resume: Product Designer"
+        class="flex items-center justify-center w-7 h-7 rounded-full transition-colors"
+        :class="isDark ? 'bg-[#2a2a28] text-[#aaa] hover:text-[#e8e5de]' : 'bg-[#e8e5de] text-[#555] hover:text-[#1a1a1a]'"
+        :aria-label="`${identity.name} resume, product designer`"
+      >
+        <PhFileText :size="13" weight="regular" />
       </a>
       <a
         :href="mailto()"

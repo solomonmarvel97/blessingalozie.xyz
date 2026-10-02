@@ -169,16 +169,6 @@ onUnmounted(() => {
                 >
                   <PhLinkedinLogo :size="15" weight="bold" />
                 </a>
-                <a
-                  :href="identity.resumeHref"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex items-center justify-center w-8 h-8 rounded-full transition-colors"
-                  :class="isDark ? 'bg-[#2a2a28] text-[#aaa] hover:text-[#e8e5de]' : 'bg-[#f0ede8] text-[#555] hover:text-[#1a1a1a]'"
-                  :aria-label="`${identity.name} resume`"
-                >
-                  <PhFileText :size="15" weight="bold" />
-                </a>
               </div>
 
               <a
@@ -191,6 +181,31 @@ onUnmounted(() => {
                 <PhLinkedinLogo :size="14" weight="bold" />
                 Connect on LinkedIn
               </a>
+
+              <div class="flex items-center gap-2 mt-2">
+                <a
+                  :href="identity.resumeDeveloperHref"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-1.5 w-1/2 py-2 rounded-lg text-[12px] font-medium transition-colors border"
+                  :class="isDark ? 'border-[#2a2a28] text-[#aaa] hover:text-[#e8e5de]' : 'border-[#d8d5ce] text-[#555] hover:text-[#1a1a1a]'"
+                  :aria-label="`${identity.name} resume, frontend developer`"
+                >
+                  <PhFileText :size="13" weight="bold" />
+                  Developer CV
+                </a>
+                <a
+                  :href="identity.resumeDesignerHref"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-1.5 w-1/2 py-2 rounded-lg text-[12px] font-medium transition-colors border"
+                  :class="isDark ? 'border-[#2a2a28] text-[#aaa] hover:text-[#e8e5de]' : 'border-[#d8d5ce] text-[#555] hover:text-[#1a1a1a]'"
+                  :aria-label="`${identity.name} resume, product designer`"
+                >
+                  <PhFileText :size="13" weight="bold" />
+                  Designer CV
+                </a>
+              </div>
             </div>
           </div>
         </DialogContent>

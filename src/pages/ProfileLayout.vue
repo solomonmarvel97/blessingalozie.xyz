@@ -61,7 +61,7 @@ const { time, weatherIcon, tempC } = useProfileClockWeather()
 const mainLabel = computed(() => {
   if (route.path === '/about') return 'Blessing Alozie - About'
   if (route.path === '/experience') return 'Blessing Alozie - Experience'
-  return 'Blessing Alozie - Design Engineer'
+  return 'Blessing Alozie - Frontend Developer & Product Designer'
 })
 
 onMounted(() => {

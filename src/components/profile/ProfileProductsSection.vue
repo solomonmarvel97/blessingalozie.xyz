@@ -304,6 +304,23 @@ watch(openProduct, async (item) => {
             </div>
           </div>
 
+          <div v-if="openProduct.gallery?.length" class="grid grid-cols-2 gap-2 px-4 pt-3 sm:px-5">
+            <div
+              v-for="(shot, i) in openProduct.gallery"
+              :key="i"
+              class="overflow-hidden rounded-lg bg-white ring-1"
+              :class="isDark ? 'ring-white/10' : 'ring-black/[0.08]'"
+            >
+              <img
+                :src="shot.src"
+                :alt="shot.alt"
+                class="block h-auto w-full"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
           <div class="space-y-3 px-5 py-4">
             <p
               class="m-0 text-[13px] leading-relaxed"

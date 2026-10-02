@@ -132,7 +132,7 @@ export const products: Product[] = [
   },
   {
     title: 'Luvie',
-    year: '2025',
+    year: '2026',
     url: 'https://luvie.io',
     urlLabel: 'Visit Luvie',
     image: '/profile/portfolio/luvie.jpg',

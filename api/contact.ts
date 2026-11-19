@@ -154,19 +154,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     const resend = new Resend(apiKey)
-    const { error: visitorError } = await resend.emails.send({
-      from,
-      to: [email],
-      replyTo: reply_to,
-      subject: `Request for ${config.emailLabel} received`,
-      html: visitorHtml,
-    })
-
-    if (visitorError) {
-      console.error('Visitor email error:', visitorError)
-      return res.status(502).json({ error: 'Failed to send message. Please try again.' })
-    }
-
     const { error: ownerError } = await resend.emails.send({
       from,
       to: [to],
@@ -179,6 +166,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (ownerError) {
       console.error('Owner email error:', ownerError)
       return res.status(502).json({ error: 'Failed to send message. Please try again.' })
+    }
+
+    const { error: visitorError } = await resend.emails.send({
+      from,
+      to: [email],
+      replyTo: reply_to,
+      subject: `Request for ${config.emailLabel} received`,
+      html: visitorHtml,
+    })
+
+    if (visitorError) {
+      // The inquiry has already been delivered to the site owner, so don't tell
+      // the visitor the submission failed and encourage a duplicate retry.
+      console.error('Visitor acknowledgment email error:', visitorError)
     }
 
     return res.status(200).json({ ok: true, intent })
